@@ -1,3 +1,5 @@
+$red: #DD3416;
+
 .tf-upvotes {
 	display: table;
 	width: 100%;
@@ -7,4 +9,46 @@
 	display: table-cell;
 	width: 50%;
 	padding-left: 5px;
+}
+
+body {
+  background: #FFDA91;
+}
+
+.date-label{
+  text-align: left;
+  color: white;
+}
+
+.header {
+	background: #F64747;
+}
+
+.tf-post-meta {
+  vertical-align: top;
+	margin-left: 10px;
+  display:inline-block;
+}
+
+.post-category{
+  display:inline-block;
+  font-size:12px;
+  background:#eee;
+  padding:3px 5px 1px 5px;
+  text-transform:uppercase;
+  font-weight:normal;
+  vertical-align:middle;
+  &:hover{
+    background:$red;
+    color:white;
+  }
+}
+
+.post-categories{
+  text-align: right;
+}
+
+.post-heading {
+  display:inline-block;
+	width: 75%;
 }

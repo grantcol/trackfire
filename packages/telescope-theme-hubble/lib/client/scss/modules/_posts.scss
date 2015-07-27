@@ -1,7 +1,10 @@
 // ------------------------------------ posts ------------------------------------ //
 
 .posts-wrapper {
-	padding: 0;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 .single-post .posts {
 	margin-bottom: 10px;
@@ -380,7 +383,7 @@
 	}
 }
 .post-share {
-	display: none;
+	/*display: none;*/
 }
 // -------------------------------- post content --------------------------------- //
 

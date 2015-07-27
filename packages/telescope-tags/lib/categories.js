@@ -21,6 +21,10 @@ categorySchema = new SimpleSchema({
   image: {
     type: String,
     optional: true
+  },
+  parent : {
+    type: String,
+    optional: true
   }
 });
 
@@ -36,6 +40,7 @@ Categories.before.insert(function (userId, doc) {
 // category post list parameters
 viewParameters.category = function (terms) {
   var categoryId = Categories.findOne({slug: terms.category})._id;
+  console.log(categoryId);
   return {
     find: {'categories': {$in: [categoryId]}} ,
     options: {sort: {sticky: -1, score: -1}} // for now categories views default to the "top" view

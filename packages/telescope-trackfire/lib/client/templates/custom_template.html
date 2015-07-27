@@ -1,3 +1,13 @@
-<template name="customTemplate">
-  Custom Template
+<template name="trackfireContent">
+    <div class="post-info">
+      <h3 class="post-heading">
+        {{> customPostTitle }}
+      </h3>
+      <div class="tf-post-meta">
+       {{> trackfirePostAuthor }}
+       <br>
+       {{> trackfirePostCategories }}
+      </div>
+      {{ postShare }}
+    </div>
 </template>

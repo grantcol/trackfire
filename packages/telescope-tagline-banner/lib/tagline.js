@@ -15,4 +15,5 @@ var showTaglineBanner = {
     }
   }
 };
+
 Settings.addToSchema(showTaglineBanner);

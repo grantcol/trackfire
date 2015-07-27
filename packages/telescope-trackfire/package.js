@@ -65,13 +65,31 @@ Package.onUse(function (api) {
     'lib/client/templates/customPostTitle.html',
     'lib/client/templates/customPostTitle.js',
     'lib/client/stylesheets/custom.scss',
-    'lib/client/templates/trackfireUpvotes.html'
+    'lib/client/templates/trackfireUpvotes.html',
+    'lib/client/templates/trackfirePostsList.html',
+    'lib/client/templates/trackfireNav.html',
+    'lib/client/templates/trackfireCategoryList.html',
+    'lib/client/templates/trackfireCategoryList.js',
+    'lib/client/templates/trackfireCategoryItem.html',
+    'lib/client/templates/trackfireCategoryItem.js',
+    'lib/client/templates/trackfirePostInfo.html',
+    'lib/client/templates/trackfirePostInfo.js',
+    'lib/client/templates/trackfirePostDomain.html',
+    'lib/client/templates/trackfirePostAuthor.html',
+    'lib/client/templates/trackfirePostCategories.html',
+    'lib/client/templates/trackfirePostCategories.js',
+    'lib/client/templates/trackfireCategories.html',
+    'lib/client/templates/trackfireSubCategoryItem.html',
+    'lib/client/templates/trackfireSubCategoryItem.js',
+    'lib/client/templates/trackfireSubCategoryList.js'
+
   ], ['client']);
 
   // server
 
   api.add_files([
-    'lib/server/publications.js'
+    'lib/server/publications.js',
+    'lib/server/getSoundcloudEmbed.js'
   ], ['server']);
 
   // i18n languages (must come last)

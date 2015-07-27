@@ -22,27 +22,71 @@ secondaryNav.push({
 });
 
 // add items to the view menu
+/*viewsMenu.push({
+  route: 'hip-hop',
+  label: 'Hip-Hop',
+  description: '' // optional
+});
+
+// add items to the view menu
 viewsMenu.push({
-  route: 'customRoute',
-  label: 'customViewLink',
+  route: 'electronic',
+  label: 'Electronic',
   description: '' // optional
 });
 
-// add items to the admin menu
-adminMenu.push({
-  route: 'customRoute',
-  label: 'customAdminLink',
+// add items to the view menu
+viewsMenu.push({
+  route: 'dubstep',
+  label: 'Dubstep',
   description: '' // optional
 });
 
+// add items to the view menu
+viewsMenu.push({
+  route: 'house',
+  label: 'House',
+  description: '' // optional
+});
+
+// add items to the view menu
+viewsMenu.push({
+  route: 'trap',
+  label: 'Trap',
+  description: '' // optional
+});
+
+// add items to the view menu
+viewsMenu.push({
+  route: 'edm-dance',
+  label: 'EDM/Dance',
+  description: '' // optional
+});
+
+viewsMenu.push({
+  route: 'nudisco',
+  label: 'Nu Disco',
+  description: '' // optional
+});
+
+viewParameters.house = function () {
+  return {
+    options: {sort: {postGenre: 'house'}}
+  };
+}*/
 // ------------------------------------------------------------------------------------------- //
 // ------------------------------------------ Zones ------------------------------------------ //
 // ------------------------------------------------------------------------------------------- //
 
 // add templates to the hero zone (before posts list)
 heroModules.push({
-  template: 'customHero',
-  order: 99
+  template: 'trackfireCategoryList',
+  order: 1
+});
+
+heroModules.push({
+  template: 'trackfireSubCategoryList',
+  order: 2
 });
   
 // add templates to the footer (after posts list)

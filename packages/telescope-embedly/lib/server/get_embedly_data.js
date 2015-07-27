@@ -1,7 +1,7 @@
 getEmbedlyData = function (url) {
   var data = {}
   var extractBase = 'http://api.embed.ly/1/extract';
-  var embedlyKey = Settings.get('embedlyKey');
+  var embedlyKey = '3bf427e4eb02447db3e5133e2aea59bf';//Settings.get('embedlyKey');
   var thumbnailWidth = Settings.get('thumbnailWidth', 200);
   var thumbnailHeight = Settings.get('thumbnailHeight', 125);
 

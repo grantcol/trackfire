@@ -1,5 +1,4 @@
 // Global Function
-
-myFunction = function (a, b) {
-  return a + b;
-}
+getCategoryUrl = function(slug){
+  return getSiteUrl()+'category/'+slug;
+};

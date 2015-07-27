@@ -1,20 +1,9 @@
 //customPostTitle.js
 Meteor.startup(function () {
 
-  /*Template[getTemplate('customPostTitle')].onRendered(function() {
-  	
-      SC.oEmbed("http://soundcloud.com/forss/flickermood", {auto_play: true}, function(oembed){
-      	scIframe = oembed.html;
-    	console.log("oEmbed response: ", scIframe);
-    	Session.set("scIframe", oembed.html);
-  	  });
-  });*/
-
   Template[getTemplate('customPostTitle')].helpers({
-    name: function () {
-      //var scIframe = "hey";
-      //Session.set("scIframe", scIframe);
-  	  return Session.get("scIframe");
+    embed: function () {
+  	  return 'https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F1453396&show_artwork=true';
     }
   });
 

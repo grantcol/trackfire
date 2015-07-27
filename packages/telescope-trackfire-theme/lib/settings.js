@@ -1,6 +1,6 @@
 // Custom Setting
 
-var customSetting = {
+/*var customSetting = {
   propertyName: 'customSetting',
   propertySchema: {
     type: String,
@@ -11,4 +11,4 @@ var customSetting = {
     }
   }
 }
-Settings.addToSchema(customSetting);
+Settings.addToSchema(customSetting);*/

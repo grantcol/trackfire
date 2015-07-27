@@ -1,9 +1,14 @@
 Meteor.startup(function () {
 
-  Template[getTemplate('customTemplate')].helpers({
-    name: function () {
-      return "Bruce Willis";
-    }
+  Template[getTemplate('trackfireContent')].helpers({
+
+  postLink: function(){
+    return !!this.embedLink ? this.embedLink : getOutgoingUrl(this.url);
+  },
+  postTarget: function() {
+    return !!this.url ? '_blank' : '';
+  }
+  
   });
 
 });

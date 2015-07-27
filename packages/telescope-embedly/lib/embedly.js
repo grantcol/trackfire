@@ -5,7 +5,8 @@ var thumbnailProperty = {
     optional: true,
     autoform: {
       editable: true,
-      type: 'bootstrap-postthumbnail'
+      type: 'bootstrap-postthumbnail',
+      hidden: true
     }
   }
 }

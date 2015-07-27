@@ -1,0 +1,9 @@
+<template name="trackfireSubCategoryList">
+	{{#if isSuperCategoryPage}}
+    <div class="grid-module grid banner">
+        {{#each categoriesArray}}
+          {{> UI.dynamic template=trackfireCategoryItem}}
+        {{/each}}
+    </div>
+    {{/if}}
+</template>

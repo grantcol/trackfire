@@ -36,6 +36,7 @@ Meteor.startup(function () {
   });
 });
 
-heroModules.push({
-  template: 'updateBanner'
-});
+/*heroModules.push({
+  template: 'updateBanner',
+  order: 99
+});*/

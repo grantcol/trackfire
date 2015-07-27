@@ -6,7 +6,7 @@ Meteor.startup(function () {
         label: 'all_categories',
         itemClass: 'item-never-active'
       }];
-      var menuItems = _.map(Categories.find({}, {sort: {order: 1, name: 1}}).fetch(), function (category) {
+      var menuItems = _.map(Categories.find({parent : 'root'}, {sort: {order: 1, name: 1}}).fetch(), function (category) {
         return {
           route: function () {
             return getCategoryUrl(category.slug);
